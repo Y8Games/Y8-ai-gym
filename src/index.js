@@ -6,6 +6,8 @@ import 'phaser';
 import pkg from 'phaser/package.json';
 import Preloader from 'preloader';
 import Game from 'game';
+import 'core-js';
+import 'regenerator-runtime/runtime';
 
 window.width = 720;
 window.height = 720;

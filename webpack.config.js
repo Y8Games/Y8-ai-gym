@@ -40,6 +40,16 @@ const config = {
       template: 'src/index.html',
     }),
   ],
+  presets: [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3,
+        "debug": true
+      }
+    ]
+  ],
   devServer: {
     port: 8080,
     stats: 'minimal',
