@@ -11,8 +11,8 @@ This project combines Phaser 3 and TensorFlow.JS (TFJS) to create a 2d environme
 
 ## Development
 - `npm start`
-- Open `http://localhost:8080` in one or more browser tabs
-- Client side code (everything in the src folder) is auto loaded. To restart the server, push `Ctrl + C`. The main file of interest is the src/game.js that contains the algorithm and game mechanics..
+- Open `http://localhost:8080` in a browser
+- Client side code (everything in the src folder) is auto loaded. To restart the server, push `Ctrl + C`. The main file of interest is the src/game.js that contains the algorithm and game mechanics.
 
 ## Training and Evaluating
 
