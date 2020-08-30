@@ -12,7 +12,12 @@ const config = {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
         exclude: /node_modules/,
       },
       {
@@ -39,16 +44,6 @@ const config = {
       favicon: 'src/img/favicon.png',
       template: 'src/index.html',
     }),
-  ],
-  presets: [
-    [
-      "@babel/preset-env",
-      {
-        "useBuiltIns": "entry",
-        "corejs": 3,
-        "debug": true
-      }
-    ]
   ],
   devServer: {
     port: 8080,
