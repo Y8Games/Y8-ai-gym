@@ -26,7 +26,6 @@ export default class Game extends Phaser.Scene {
     this.height = this.sys.game.canvas.height;
     this.centerX = this.width / 2;
     this.centerY = this.height / 2;
-    this.buttonSound = this.sound.add('bottom', {});
     this.name = Math.random().toString(36).substring(7);
     this.direction = { up: false, right: false, down: false, left: false };
   }

@@ -11,20 +11,12 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.m?js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  "useBuiltIns": "usage",
-                  "corejs": 3,
-                  "debug": true
-                }
-              ]
-            ]
+            presets: ['@babel/preset-env']
           }
         },
         exclude: /node_modules/,

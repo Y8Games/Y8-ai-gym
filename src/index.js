@@ -2,12 +2,12 @@
 * Index is the start of Phaser. The chain goes like index, preloader, game.
 */
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import 'phaser';
 import pkg from 'phaser/package.json';
 import Preloader from 'preloader';
 import Game from 'game';
-import 'core-js';
-import 'regenerator-runtime/runtime';
 
 window.width = 720;
 window.height = 720;
